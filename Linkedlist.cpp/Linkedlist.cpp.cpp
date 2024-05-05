@@ -9,3 +9,9 @@ struct Node
     Node* next;
     Node* prev;
 };
+
+Node* START = NULL;
+
+void addnode()
+{
+    Node* newNode = new Node(); // step 1: create a new node
