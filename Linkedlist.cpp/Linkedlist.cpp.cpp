@@ -53,3 +53,12 @@ void addnode()
 
         if (current != NULL)
         {
+            current->prev = newNode; // step 6 : make previous field of the current node point to the new node 
+        }
+
+        if (previous != NULL)
+        {
+            previous->next = newNode; // step 7 : make the next field of the previous node point to the new node
+        }
+        else
+        {
