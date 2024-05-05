@@ -128,3 +128,12 @@ void deleteNode()
         }
     }
 
+    // Release the memory of the node marked as current 
+    delete current;
+    cout << "\x1b[32mRecord with roll number " << rollNo << " deleted\x1b[om" << endl;
+}
+
+bool listEmpty()
+{
+    return (START == NULL);
+}
